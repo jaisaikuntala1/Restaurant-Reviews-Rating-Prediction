@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Review Rating</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div>
+<div style="height: 65px;width: 100%;background-color: rgba(235, 193, 193, 0.685);margin: auto;">
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding: 10px;text-align: center;"><strong>RESTAURANT REVIEW RATING PREDICTION</strong></h2>
+
+</div>
+    
+
+    <div style="background-image: url('../static/images/restaurant_image2.jpg'); height: 800px;background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;" class="container-fluid">
+        <div class="row" style="margin-top: 175px;">
+            <div>
+            <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;color: black;"><strong>Enter Your Review Here :</strong></h3>
+            <form action="/" method="POST">
+                <div style="margin-top: 70px;margin-bottom: 60px;width: 50%;margin: auto;" class="form-group">
+                    <input style="height: 60px" class="form-control" type="text" name="content">
+                </div>
+                <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;width:20%;align-content: center;margin: auto;margin-top: 50px;">
+                    <input type="submit" class="btn btn-primary btn-block" value="Submit Review">
+                </div>
+            </form>
+
+        </div>
+        
+        </div>
+    </div>
+    
+  
+
+    
+</div>
+{% endblock %}
